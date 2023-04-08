@@ -1,0 +1,20 @@
+//sap.app
+
+      "dataSources": {
+        "employee": {
+          "uri": "/model/Employees.json",
+          "type": "JSON"
+        }
+      }
+//sap.ui5
+      "employee": {
+       "dataSource" : "employee",
+       "type":"sap.ui.json.JSONModel"
+      }
+
+      items="{
+        path : 'employee>/Employees',
+        sorter : {
+                   path : 'FirstName' 
+                  }
+              }"
