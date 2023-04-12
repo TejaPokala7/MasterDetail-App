@@ -1,0 +1,92 @@
+{
+    "_version": "1.12.0",
+    "sap.app": {
+      "id": "task2",
+      "type": "application",
+      "i18n": "i18n/i18n.properties",
+      "title": "{{appTitle}}",
+      "description": "{{appDescription}}",
+      "applicationVersion": {
+        "version": "1.7.7"
+      }
+    },
+    "sap.ui": {
+      "technology": "UI5",
+      "deviceTypes": {
+          "desktop": true,
+          "tablet": true,
+          "phone": true
+      }
+    },
+    "sap.ui5": {
+      "rootView": {
+          "viewName": "task2.view.App",
+          "type": "XML",
+          "id": "app"
+      },
+      "dependencies": {
+        "minUI5Version": "1.93",
+        "libs": {
+          "sap.ui.core": {},
+          "sap.m": {}
+        }
+      },
+      "models": {
+        "i18n": {
+          "type": "sap.ui.model.resource.ResourceModel",
+          "settings": {
+            "bundleName": "task2.i18n.i18n",
+            "supportedLocales": [""],
+            "fallbackLocale": ""
+          }
+        }
+      },
+      "routing": {
+        "config": {
+          "routerClass": "sap.m.routing.Router",
+          "type": "View",
+          "viewType": "XML",
+          "path": "task2.view",
+          "controlId": "app",
+          "controlAggregation": "pages"
+        },
+        "routes": [
+          {
+            "pattern": "detail/{invoicePath}",
+            "name": "detail",
+            "target": "detail"
+          },
+          {
+            "pattern": "App",
+            "name": "App",
+            "target": "App"
+          }
+        ],
+        "targets": {
+          "detail": {
+            "id": "detail",
+            "name": "Detail"
+          },
+          "App": {
+            "id": "App",
+            "name": "App"
+          }
+        }
+      },
+      "resources": {
+        "css": [
+          {
+            "uri": "css/style.css"
+          }
+        ]
+      },
+      "employee": {
+       "type":"sap.ui.json.JSONModel",
+       "uri":"model/Employees.json"
+      },
+      "contentDensities": {
+        "compact": true,
+        "cozy": true
+      }
+    }
+  }

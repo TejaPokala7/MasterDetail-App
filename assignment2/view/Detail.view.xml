@@ -1,0 +1,43 @@
+<mvc:View
+	controllerName="task2.controller.Detail"
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc">
+	<Page
+		title="{i18n>detailPageTitle}"
+		showNavButton="true"
+		navButtonPress=".onNavBack">
+		<content>
+            <Table>
+                <headerToolbar>
+			        <Toolbar>
+				        <Title id="Titleid"  text="{employee>Firstname}"/>
+			        </Toolbar>
+		        </headerToolbar> 
+                <columns>
+			        <Column>
+				        <FormattedText htmlText="{i18n>column11}"/>
+			        </Column>
+					<Column>
+				        <FormattedText htmlText="{i18n>column22}"/>
+			        </Column>
+					<Column>
+				        <FormattedText htmlText="{i18n>column33}"/>
+			        </Column>
+                    <Column>
+				        <FormattedText htmlText="{i18n>column44}"/>
+			        </Column>
+		        </columns>
+                <items>
+                    <ColumnListItem>
+                        <cells>
+                            <Text text="{employee>Emp-id}"></Text>
+                            <Text text="{employee>FirstName}"></Text>
+							<Text text="{employee>LastName}"></Text>
+							<Text text="{employee>Email}"></Text>
+                        </cells>
+                    </ColumnListItem>
+                </items>
+            </Table>
+        </content>
+	</Page>
+</mvc:View>
