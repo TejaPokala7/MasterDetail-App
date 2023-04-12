@@ -112,6 +112,7 @@ sap.ui.define([
       var EmpId = oEvent.getSource().getSelectedItem().getBindingContext().getProperty("Emp-id")
       this.getOwnerComponent().getRouter()
                 .navTo("detail","{Emp-id: EmpId}",);
+
      } */
     onPress: function(oEvent){
       var EmpId = oEvent.getParameter("listItem").getBindingContext().getProperty("Emp-id");

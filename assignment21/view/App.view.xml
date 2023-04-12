@@ -6,6 +6,7 @@
   <Shell>
    <App id="app">
       <pages>
+      <!--       -->
          <Page title="{i18n>pagetitle}">
             <content>
                <SplitContainer initialMaster="master" initialDetail="detail">

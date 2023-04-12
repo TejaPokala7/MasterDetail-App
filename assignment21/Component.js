@@ -13,6 +13,7 @@ sap.ui.define([
           UIComponent.prototype.init.apply(this, arguments);
           // set data model
           this.getRouter().initialize();
+          //..
        },
        getContentDensityClass : function () {
           if (!this._sContentDensityClass) {
