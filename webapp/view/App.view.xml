@@ -8,10 +8,6 @@
       <pages>
          <Page title="{i18n>pagetitle}">
             <content>
-                <!-- <Panel
-                         class="sapUiResponsiveMargin"
-							    width="auto">
-                    <content> -->
                         <Table 
                             id="empTab"
 		                      class="sapUiResponsiveMargin"
@@ -65,8 +61,6 @@
                                </ColumnListItem>
                            </items>
                         </Table>
-                    <!-- </content>
-                </Panel> -->
             </content>
          </Page>
       </pages>

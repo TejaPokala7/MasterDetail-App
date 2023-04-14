@@ -39,6 +39,10 @@
             "supportedLocales": [""],
             "fallbackLocale": ""
           }
+        },
+        "employee": {
+         "type":"sap.ui.json.JSONModel",
+         "uri":"model/local.json"
         }
       },
       "resources": {
@@ -47,10 +51,6 @@
             "uri": "css/style.css"
           }
         ]
-      },
-      "employee": {
-       "type":"sap.ui.json.JSONModel",
-       "uri":"model/Employees.json"
       },
       "contentDensities": {
         "compact": true,

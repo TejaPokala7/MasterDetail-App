@@ -2,7 +2,7 @@
     xmlns="sap.m"
     xmlns:form="sap.ui.layout.form"
     xmlns:core="sap.ui.core">
-    <Dialog id="openDialog" title="{i18n>DialogTitle}">
+    <Dialog id="openDialog" title="{i18n>Dialogtitle}">
         <form:SimpleForm
          id="SimpleFormDisplay354"
          editable="true"
